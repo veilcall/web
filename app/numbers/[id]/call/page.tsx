@@ -314,11 +314,10 @@ export default function CallPage({ params }: { params: { id: string } }) {
       {/* Controls */}
       <div className="space-y-3">
         {/* Main Call / Hang Up Button */}
-        {!isActive && status !== 'ENDED' && status !== 'ERROR' && (
+        {status === 'IDLE' && (
           <button
             onClick={handleCall}
-            disabled={status === 'CONNECTING'}
-            className="border border-black px-8 py-4 font-mono text-sm tracking-widest uppercase hover:bg-black hover:text-white transition-colors disabled:opacity-40 disabled:cursor-not-allowed w-full"
+            className="border border-black px-8 py-4 font-mono text-sm tracking-widest uppercase hover:bg-black hover:text-white transition-colors w-full"
           >
             CALL
           </button>
