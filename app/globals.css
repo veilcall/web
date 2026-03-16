@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  border-radius: 0 !important;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', 'Courier New', monospace;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove scrollbar styling — keep native */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Remove all default focus ring styles — we handle manually */
+*:focus {
+  outline: none;
+}
+
+/* Remove default button styles */
+button {
+  cursor: pointer;
+  background: transparent;
+}
+
+/* Remove default input styles */
+input,
+textarea,
+select {
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+/* Ensure no color bleeds in from browser defaults */
+a {
+  color: inherit;
+  text-decoration: none;
+}
